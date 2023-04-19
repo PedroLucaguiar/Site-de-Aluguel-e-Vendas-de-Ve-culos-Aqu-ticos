@@ -1,0 +1,202 @@
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 1  */
+
+.ConttIMG{
+    min-height: 90vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#imagem1{
+    height: 100%;
+    position: relative; 
+    max-width: 40%;
+}
+
+#imagem1 img{
+    height: 100%;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+#txt1{
+    position: relative;
+}
+
+.divh1 {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;;
+}
+.divh1 h1{
+    color: #99f2e5ff;
+    font-family: 'Mansalva', cursive;
+    font-size: 90px;
+    user-select: none;
+    text-align: right;
+    line-height: 1;
+    width: 100%;
+}
+
+.divh3{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.divh3 h3{
+    color: #ff9a79ff;
+    user-select: none;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.divconfira{
+    position: relative;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divconfira a{
+    border-radius: 10%;
+    padding: 15px;
+    color: white;
+    font-size: 30px;
+    background-position: 0%;
+    background-color: #99f2e5ff;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 2  */
+
+.Conttvts {
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    user-select: none;
+    min-height: 70%;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.Conttvts img{
+    width: 100%;
+}
+
+.Conttvts div{
+    width: 20%;
+    padding-left: auto ;
+    padding-right: auto ;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Conttvts h3{
+    text-align: center;
+    color: #67E0F5;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Conttvts p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(145, 145, 145);
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 3  */
+
+.Conttsvc{
+    user-select: none;
+    min-height: 96vh;
+    margin-top: 100px;
+}
+
+.svc1{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 50%;
+    width: 100%;
+    justify-content:end;
+}
+
+#svcimg1{
+    height: 100%;
+}
+
+#svcimg1 img{
+    max-height: 40vh;
+
+}
+
+#svctxt1{
+    height: 100%;
+    max-width: 25%;
+}
+
+#svctxt1 h3{
+    text-align: right;
+    color: #67E0F5;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 7px;
+}
+
+#svctxt1 p{
+    text-align: right;
+    font-size: 18px;
+    margin-right: 7px;
+    color: rgb(131, 131, 131);
+}
+
+
+
+
+.svc2{
+    display: flex;
+    max-height: 50%;
+    left: 80px;
+    bottom: 0px;
+    margin-bottom: 30px;
+}
+#svcimg2{
+    margin-left: 30px;
+}
+#svcimg2 img{
+    max-height: 40vh;
+    left: 30px;
+}
+
+#svctxt2{
+    max-width: 20%;
+    margin-left: 20px;
+}
+
+
+#svctxt2 h3{
+    text-align: left;
+    color: #67E0F5;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#svctxt2 p{
+    text-align: left;
+    font-size: 18px;
+    margin-left: 10px;
+    color: rgb(131, 131, 131);
+}

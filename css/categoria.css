@@ -1,0 +1,434 @@
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 1  */
+
+.sec1{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    position: relative;
+    top: 45px;
+}
+
+.sec1 h1{
+    font-size: 120px;
+    color: #f9cc48ff;
+    width: 100%;
+    margin-left: 13%;
+    padding-top: 120px;
+}
+
+.sec1 p{
+    font-size: 25px;
+    color: rgb(131, 131, 131);
+    margin-left: 14%;
+}
+
+.sec1 img{
+    height: 90vh;
+    position: absolute;
+    right: 8%;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 2  */
+
+.sec2{
+    margin-top: 150px;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.sec2dv1{
+    height: 90vh;
+    position: relative;
+    width: 30%;
+}
+
+.sec2dv2{
+    height: 90vh;
+    position: relative;
+    width: 70%;
+}
+
+.sec2dv1 img{
+    height: 100%;
+    right: 5px;
+    position: absolute;
+}
+
+.sec2dv2 h1{
+    font-size: 95px;
+    color: #6aaae6ff;
+    width: 100%;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.sec2dv2 p{
+    font-size: 25px;
+    color: rgb(131, 131, 131);
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 3  */
+
+
+.sec3{
+    margin-top: 150px;
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-bottom: 100px;
+}
+
+.sec3 h1{
+    font-size: 60px;
+    text-align: center;
+    color:#99f2e5ff;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+
+
+
+.sec3div1{
+    width: 100%;
+    display: flex;
+}
+
+.iate{
+    height: 100%;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+#iatedv1{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+}
+
+#iatedv1 img{
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+#iatedv2{
+    width: 60%;
+    margin: auto;
+}
+
+#iatedv2 h2{
+    font-size: 80px;
+    color: #6aa4fa;
+    margin-right: 60px;
+    text-align: center;
+}
+
+#iatedv2 p{
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    margin-right: 60px;
+    text-align: justify;
+}
+
+#iatedv2 div{
+    position: relative;
+    display: flex;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+#iatedv2 a{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #6aa4fa;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+.sec3div2{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+}
+
+.jetski{
+    height: 100%;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+#jetdv1{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+}
+
+#jetdv1 img{
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+#jetdv2{
+    width: 60%;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+#jetdv2 h2{
+    font-size: 80px;
+    color: #b46afa;;
+    margin-left: 100px;
+    text-align: center;
+}
+
+#jetdv2 p{
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    margin-left: 100px;
+    text-align: justify;
+    
+}
+
+#jetdv2 div{
+    position: relative;
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+#jetdv2 a{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #b46afa;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+
+
+
+.sec3div3{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+
+}
+
+.catamara{
+    height: 100%;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+}
+
+#catdv1{
+    height: 100%;
+    width: 40%;
+    position: relative;
+    display: flex;
+}
+
+#catdv1 img{
+    height: 80%;
+    position: relative;
+    margin: auto;
+}
+
+#catdv2{
+    width: 60%;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+
+#catdv2 h2{
+    font-size: 80px;
+    color: #fac86a;;
+    text-align: center;
+    margin-right: 60px;
+}
+
+#catdv2 p{
+    font-size: 20px;
+    color: rgb(131, 131, 131);
+    text-align: justify;
+    margin-right: 60px;
+    
+}
+
+#catdv2 div{
+    position: relative;
+    display: flex;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+
+#catdv2 a{
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fac86a;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 20px;
+    color: white;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------
+   Estilo Part 4   */
+
+.sec4{
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.sec4 h1{
+    font-size: 60px;
+    text-align: center;
+    color: #99f2e5ff;
+}
+
+
+
+
+
+
+
+
+.sec4div1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    padding-right: 50px;
+    margin-top: 150px;
+}
+
+.chefes1{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    border-bottom: rgb(230, 73, 146) 3px solid;
+    border-right: rgb(230, 73, 146) 3px solid;
+}
+
+.chefes1 h2{
+    font-size: 40px; 
+    margin-bottom: 20px;
+    color: rgb(230, 73, 146);
+}
+
+.chefes1 p{
+    color: rgb(131, 131, 131);
+    font-size: 20px; 
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+.sec4div2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 50px;
+    margin-top: 150px;
+}
+
+.acessorios1{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    border-bottom: rgb(73, 154, 230) 3px solid;
+    border-left: rgb(73, 154, 230) 3px solid;
+}
+
+.acessorios1 h2{
+    font-size: 40px; 
+    margin-bottom: 20px;
+    color: rgb(73, 154, 230);
+}
+
+.acessorios1 p{
+    color: rgb(131, 131, 131);
+    font-size: 20px; 
+    width: 80%;
+}
+
+
+
+
+
+
+.sec4div3{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    padding-right: 50px;
+    margin-top: 150px;
+}
+
+.pilotos1{
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    border-bottom: rgb(241, 199, 11) 3px solid;
+    border-right: rgb(241, 199, 11) 3px solid;
+}
+
+.pilotos1 h2{
+    font-size: 40px; 
+    margin-bottom: 20px;
+    color: rgb(241, 199, 11);
+}
+
+.pilotos1 p{
+    color: rgb(131, 131, 131);
+    font-size: 20px; 
+    width: 80%;
+}

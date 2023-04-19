@@ -1,0 +1,287 @@
+/*-----------------------------------------------------------------------------------------------------------
+   Pag Emarcações específicas  */
+
+.fundomostruario{
+    width: 80%;
+    margin-left: auto;
+	margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.grid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    user-select: none;
+}
+
+.grid h2{
+    font-size: 50px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.btnalugar{
+    background-color:  #67E0F5;
+    height: 70px;
+    width: 400px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.btnalugar p{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    top: 15%;   
+}
+
+.cards{
+    min-height: 200px;
+    width: 450px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.cards h3{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: black;
+    border-style: solid;
+    border-bottom-width: 1px;
+}
+
+.textos{
+    display: flex;
+    width: 100%;
+}
+
+.textos p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+}
+
+#p2{
+    right: 0;
+    position: absolute;
+}
+
+.fotos{
+    height: 130px;
+    width: 230px;
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.fotos img{
+    height: 100%;
+    min-width: 100%;
+    cursor: pointer;
+}
+
+.fotos:hover img{
+    transition: 0.2s linear; 
+    transform: scale(1.05);
+
+}
+
+.fotomax{
+   display: none;
+}
+
+.fotomaxatv{
+    z-index: 1;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.315);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.divfotomax{
+    width: 80%;
+    height: 85vh;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.divfotomax img{
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+    Estilo opções de alugel  */
+
+.ON{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blockopbranco{
+    height: 90vh;
+    width: 80vw;
+    border-radius: 6px;
+    background-color: white;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+#fecharopcoes{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+}
+
+#fecharopcoes label span{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #67E0F5;
+    transition: 0.25s ease-in-out;
+}
+
+#fecharopcoes label span:nth-child(1){
+    top: 9px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+#fecharopcoes label span:nth-child(2){
+    top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.opcooesdiv1{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+    user-select: none;
+}
+
+.opcooesdiv1 h2{
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    color:rgb(128, 128, 128);
+    border-bottom: solid 2px;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+    margin-top: 15px;
+}
+
+.imputs{
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imputs p{
+    color:rgb(128, 128, 128);
+    margin-top: 20px;
+    width: 100%;
+    font-size: 20px;
+    user-select: none;
+}
+
+.imputs input{
+    color:rgb(128, 128, 128);
+    background-color: rgba(255, 0, 0, 0);
+    margin-left: 20px;
+    border: solid rgb(128, 128, 128);
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.subtotalmenuopc{
+    color:rgb(128, 128, 128);
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    font-size: 30px;
+    padding-left: 17%; 
+}
+
+#DatasInvalidas{
+    margin-top: 5px;
+    text-align: center;
+    color: red;
+    user-select: none;
+}
+
+.opcooesdiv2{
+    position: relative;
+    width: 100%;
+    user-select: none;
+    bottom: 0px;
+    margin-top: auto;
+    margin-bottom: 10px;
+}
+
+.opcooesdiv2 p{
+    color: white;
+    background-color:  #67E0F5;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    width: 20%;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator::after {
+    cursor: pointer;
+}

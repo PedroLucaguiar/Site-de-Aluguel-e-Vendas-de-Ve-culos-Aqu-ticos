@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+
+
+/*-----------------------------   Estilo do menu do topo     --------------------------------*/
+
+.logo{
+    width: 250px;
+    position: fixed;
+    z-index: 2;
+}
+
+.logo p{
+    height: 100%;
+    color: #67E0F5;
+    text-align: center;  
+    font-family: 'Mansalva', cursive;
+    font-size: 30px;
+    user-select: none;
+}
+
+.botão1{
+    height: 100%;
+    display: flex;
+    position: fixed;
+    right: 25px;
+    top: 15px;
+    z-index: 3;
+}
+
+#checkbox-menu{
+    position: absolute;
+    opacity: 0;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #67E0F5;
+    transition: 0.25s ease-in-out;
+}
+
+
+label span:nth-child(1){
+    top: 0px;
+}
+label span:nth-child(2){
+    top: 8px;
+}
+label span:nth-child(3){
+    top: 16px;
+}
+
+
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+#checkbox-menu:checked + label span:nth-child(2){ 
+    opacity: 0;
+}
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+.options{
+    display: none;  
+}
+
+.nmrcarrinho{
+    cursor: pointer;  
+}
+
+.ativo{
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    user-select: none;
+    right: 0px;
+    z-index: 2;
+}
+
+.ativo ul{
+    width: 100%;
+    list-style-type: none; 
+    position: absolute;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-color: rgba(0, 0, 0, 0.048);
+
+}
+
+.ativo li{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.ativo a{
+    color: #67E0F5;
+    display: block;
+    height: 100%;
+    font: bold;  
+    padding: 30px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.911);
+
+}
+
+.ativo a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #99f2e5ff;
+    display: inline-block;
+    padding: 30px;
+    transition: 0.2s linear;  
+    height: 100%;
+}
+
+.drop ul{
+    position: absolute;
+    display: none;
+    width: 100%;
+    right: 100%;
+    top: -2px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.048);
+}
+
+.drop li{
+    background-color: rgba(255, 255, 255, 0.950);
+    z-index: 1;
+}
+
+.drop:hover ul{
+    display: block;
+}
+
+#Autenticar{
+    cursor: pointer;
+}
+
+
+/*-----------------------------   Estilo do conteúdo     ------------------------------------- */
+
+
+.conteudo{
+    width: 100%;
+    user-select: none;
+    position: relative;
+}
+
+.imgtop{
+    width: 100%;
+    max-height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.imgtop img{
+    width: 100%;
+    min-height: 80vh;
+    margin: -50px 0 0 0px;
+   
+}
+
+.imgtop h2{
+    width: 100%;
+    font-size: 100px;
+    color: white;
+    padding-left: 2%;
+    background-color: rgb(0, 0, 0,0.2);
+    user-select: none;    
+    position: absolute;
+    font-size: 80px;
+    bottom: 0px;
+}
+
+/*--------------------------     Estilo do carrinho     --------------------------------*/
+ 
+
+
+.blockcarrinho{
+    background-color: rgba(0, 0, 0, 0.274);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.blockcarrinhofilho{
+    height: 90vh;
+    width: 80vw;
+    border-radius: 6px;
+    background-color: white;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.blockcarrinhofilho h3{
+    color: #67E0F5;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    user-select: none;
+    margin-bottom: 50px;
+    
+}
+
+.blockcarrinhoprodutos{
+    margin-left: 20px;
+    margin-right: 40px;
+    padding-bottom: 70px;
+}
+
+/* estilo dos produtos dinamicos dentro do carrinho */
+.produto{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    border-bottom: solid 2px rgb(194, 194, 194);
+    border-right: solid 2px rgb(194, 194, 194);
+    position: relative;
+    display: flex;
+
+}
+
+.produtodv1{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    user-select: none;
+}
+
+.produtodv2{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    user-select: none;
+}
+
+.produtodv2 h4{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color:rgb(128, 128, 128);
+    user-select: none;
+}
+
+.produtodv2 p{
+    color:rgb(128, 128, 128);
+    line-height: 1.6;
+    margin-left: 20px;
+}
+
+.produtodv1 img{
+    width: 100%;
+    height: 100%;
+    padding: 4px;
+    border-radius: 8px;
+    opacity: 90%;
+}
+/* ------------------------ Estilo da parte fixa que exibe o valor ------------------------- */
+.valortotal{
+    width: 80vw;
+    height: 80px;
+    position: fixed;
+    bottom: 0px;
+    margin-bottom: 5vh;
+    z-index: 6;
+}
+
+.valortotalexibir{
+    margin-right: 200px;
+    height: 100%;
+    width: 99.4%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.valortotalexibir h4{
+    text-align: center;
+    font-size: 30px;
+    color:rgb(94, 94, 94);
+    user-select: none;
+    margin: auto;
+}
+
+.valortotalexibir div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+    user-select: none;
+}
+
+.valortotalexibir p{
+    padding: 10px;
+    color:rgb(94, 94, 94);
+}
+
+.valortotalexibir a{
+    color: white;
+    background-color: #67E0F5;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.deletarproduto{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 6;
+}
+
+.deletarproduto label span{
+    background-color:rgb(94, 94, 94);
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    transition: 0.25s ease-in-out;
+}
+
+.deletarproduto label span:nth-child(1){
+    top: 9px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.deletarproduto label span:nth-child(2){
+    top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.fecharopcoes1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+}
+
+
+.fecharopcoes1 label span{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #67E0F5;
+    transition: 0.25s ease-in-out;
+}
+
+.fecharopcoes1 label span:nth-child(1){
+    top: 9px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.fecharopcoes1 label span:nth-child(2){
+    top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+
+
+/*-----------------------------   barra de rolagem     ------------------------------------- */
+
+/* -----------   chrome   -----------*/
+
+*::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(136, 136, 136);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 2px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+/* -----------   firefox n tenho :(   -----------*/
+
+
+
+
+/* -----------  Estilo de autenticar, bora ?   -----------*/
+
+.blockautt{
+    background-color: rgba(0, 0, 0, 0.274);
+    background-repeat: no-repeat, repeat;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+    user-select: none;
+}
+
+.blocoauttfilho{
+    height: 90vh;
+    width: 60vw;
+    border-radius: 6px;
+    background-color: white;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.login{
+    padding-top: 20px;
+    height: 90%;
+    position: relative;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+.cadast{
+    padding-top: 20px;
+    height: 90%;
+    position: relative;
+    margin: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+.fecharopcoes3{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+}
+
+.fecharopcoes3 label span{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #67E0F5;
+    transition: 0.25s ease-in-out;
+}
+
+.fecharopcoes3 label span:nth-child(1){
+    top: 9px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.fecharopcoes3 label span:nth-child(2){
+    top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+
+
+.cadastfilho{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cadastfilho h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:rgb(80, 80, 80);
+    border-bottom: solid 1px;
+}
+
+.cadastfilho p{
+    font-size: 20px;
+    color:rgb(80, 80, 80);
+}
+
+.cadastfilho input{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-radius: 4px;
+    color: rgb(80, 80, 80);
+}
+
+
+
+
+.loginfilho{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.loginfilho h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: solid 1px;
+    color:rgb(80, 80, 80);  
+}
+
+.loginfilho p{
+    font-size: 20px;
+    color:rgb(80, 80, 80);
+}
+
+.loginfilho input{
+    font-size: 20px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    border-radius: 4px;
+    color: rgb(80, 80, 80);
+}
+
+#logar{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#logar p{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #67E0F5;
+    padding: 10px;
+    border-radius: 10%;
+    color: white;
+}
+
+#cadastrar{
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#cadastrar p{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #67E0F5;
+    padding: 10px;
+    border-radius: 10%;
+    color: white;
+}
+
+/* -----------  Estilo Perfil -----------*/
+
+
+
+.blocoperfil{
+    background-color: rgba(0, 0, 0, 0.274);
+    background-repeat: no-repeat, repeat;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 4;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: none;
+    user-select: none;
+}
+
+.blocoperfilfilho{
+    height: 90vh;
+    width: 60vw;
+    border-radius: 6px;
+    background-color: white;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow-y: auto;
+}
+
+
+
+
+.fecharopcoes4{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 5;
+}
+
+.fecharopcoes4 label span{
+    position: relative;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #67E0F5;
+    transition: 0.25s ease-in-out;
+}
+
+.fecharopcoes4 label span:nth-child(1){
+    top: 9px;
+    position: relative;
+    transform: rotate(-45deg);
+}
+.fecharopcoes4 label span:nth-child(2){
+    top: 4px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+
+.infousuário{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.infousuário h3{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: rgb(80, 80, 80);
+    border-bottom: 1px solid;
+}
+
+.infousuário p{
+    color: rgb(80, 80, 80);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.deslogar{
+    position: relative;
+    bottom: 0px;
+    margin-bottom: 50px;
+    max-height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#deslogar{
+    height: 100%;
+    cursor: pointer;
+    background-color: #67E0F5;
+    position: relative;
+    padding: 7px;
+    border-radius: 5px;
+}
