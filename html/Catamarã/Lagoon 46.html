@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content=" Anizio Moreira dos Santos Filho, Gustavo Assunção da Silva e Pedro Lucas N. de Aguiar e  ">
+    <link rel="stylesheet" href='../../css/estilogeral.css'>
+    <link rel="stylesheet" href="../../css/EmbarcaçõesEspecifica.css">
+    <link rel="icon" href="../../img/icon.svg">
+
+    <title id="title">AquaMarine - Lagoon 46</title>
+</head>
+<body>
+    
+    <div id="blocoperfil" class="blocoperfil">
+
+        <div class="blocoperfilfilho">
+
+            <div id='fecharopcoes4' class="fecharopcoes4">
+                <label>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="infousuário">
+
+            </div>       
+
+            <div class="deslogar">
+                <a id="deslogar">Deslogar</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id='divcadastro' class="blockautt">
+       
+        <div class="blocoauttfilho">
+
+            <div class="fecharopcoes3">
+                <label>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+             
+            <div class="login">
+                
+                <div class="loginfilho">
+                    <h3>Login</h3>
+
+                    <p>Nome de usuario:</p>
+                    <input id="logarusuario" type="text" nome="Nome de usuario" required>
+
+                    <p>Senha:</p>
+                    <input id="logarsenha" type="password" name="senha" required>
+                </div>
+                
+                <div id="logar">
+                    <p>Logar</p>
+                </div>
+            </div>
+            
+            <div class="cadast">
+               
+                <div class="cadastfilho">
+
+                    <h3>Cadastre-se</h3>
+
+                    <p>Nome:</p>
+                    <input id="loginnome" type="text" name="nome" required>
+
+                    <p>Nome de usuario:</p>
+                    <input id="loginusuario" type="text" nome="Nome de usuario" required>
+
+                    <p>Senha:</p>
+                    <input id="loginsenha" type="password" name="senha" required>
+
+                    <p>Confirmar Senha:</p>
+                    <input id="loginsenhaconf" type="password" name="senha" required>
+
+                    <p>CPF:</p>
+                    <input id="logincpf" type="text" name="CFP" required maxlength="11">
+
+                    <p>Email:</p>
+                    <input id="loginemail" type="email" name="Email" required>
+
+                </div>
+
+                <div id="cadastrar">
+                    <p>Cadastrar-se</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="blockcarrinho">
+
+        <div class="blockcarrinhofilho">
+
+            <div class="fecharopcoes1">
+                <label>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            
+            <h3>Carrinho</h3>
+            
+            <div class="blockcarrinhoprodutos">
+
+            </div>
+            
+            <div class="valortotal">
+                <div class="valortotalexibir">
+                    
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <div id="blockcopcoes" class="ON">
+
+        <div class="blockopbranco">
+            
+            <div id="fecharopcoes">
+                <label>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="opcooesdiv1">
+                <h2 id="nomedoproduto">
+
+                </h2>
+                <div class="imputs">
+                    <p>Data de inicio: <input id="datainicio" type="date" required placeholder="dd-mm-yyyy"></p>
+                    <p>Data de devolução:  <input id="datafinal" type="date" placeholder="dd-mm-yyyy"></p>
+                </div>
+                <div id="DatasInvalidas">
+
+                </div>
+
+                <h2>
+                    Serviços
+                </h2>
+
+                <div class="imputs">
+                    <p><input id="chefes"       class="opcoescheck"  type="checkbox"> Chefes</p>
+                    <p><input id="garcons"      class="opcoescheck"  type="checkbox"> Garçons</p>
+                    <p><input id="equipamentos" class="opcoescheck"  type="checkbox"> Equipamentos de Mergulho</p>
+                    <p><input id="piloto"       class="opcoescheck"  type="checkbox"> Piloto</p>
+                    <p><input id="salvavidas"   class="opcoescheck"  type="checkbox"> Salva-vidas</p>
+                </div>
+
+                <div id="subtotalmenuopc" class="subtotalmenuopc">
+                    
+                </div>
+            </div>
+
+            <div class="opcooesdiv2">
+                <p>
+                    confirmar
+                </p>
+            </div>
+
+        </div>
+    </div>
+    
+    <div class="logo">
+        <a href="../../index.html">
+            <p>AquaMarine</p>
+        </a>
+    </div>
+
+    <div class="botão1">
+        <input type="checkbox" id='checkbox-menu'>
+
+        <label for="checkbox-menu" id=clicavel>
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <div class="options" id="options">
+                
+        <ul>
+            <li class="drop">
+                <a href="../Categoria.html">Categorias</a>
+                <ul>
+                    <li><a href="../Iates.html">Iates</a></li>
+                    <li><a href="../Jet.html">Jet Skis</a></li>
+                    <li><a href="../Catamarã.html">Catamarã</a></li>
+                </ul>
+            </li>
+            
+            <li id="Autenticar">
+                <a >Autenticar</a>
+            </li>
+
+            <li>
+                <a class="nmrcarrinho">Carrinho <span></span></a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    
+    <div class="conteudo">
+
+        <div class="fotomax">
+            <div class="divfotomax">
+
+            </div>
+        </div>
+
+        <div class="imgtop">
+
+            <h2 id="produto">Lagoon 46</h2>
+            <img src="../../img/Catamarã/Lagoon 46/TOP.jpg" alt="">
+
+        </div>
+
+        <div class="fundomostruario">
+            
+            <div class="grid">
+
+                <h2>Imagens Externas</h2>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/1.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/2.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/3.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/4.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/5.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/6.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/7.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/8.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/9.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/Ext/10.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="grid">
+
+                <h2>Imagens Internas</h2>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/1.jpg" alt="">
+                </div>
+
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/2.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/3.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/4.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/5.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/6.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/7.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/8.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/9.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/10.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/11.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/12.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/13.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/14.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/15.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/16.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/17.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/18.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/19.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/20.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/21.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/22.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/23.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/24.jpg" alt="">
+                </div>
+
+                <div class="fotos">
+                    <img src="../../img/Catamarã/Lagoon 46/INT/25.jpg" alt="">
+                </div>
+
+            </div>
+
+            <div class="grid">
+                
+                <h2>CARACTERÍSTICAS TÉCNICAS</h2>
+
+                <div class="cards">
+                    <h3>INFORMAÇÕES TÉCNICAS PRINCIPAIS</h3>
+                    
+                    <div class="textos">
+                        <p>Comprimento x Largura</p> 
+                        <p id="p2">13,87 m x 7,96 m</p>
+                    </div>                    
+
+                    <div class="textos">
+                        <p>Profundidade</p> 
+                        <p id="p2">1,35 m</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>Material</p> 
+                        <p id="p2">Plástico reforçado com fibra de vidro GfK</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>Tipo de quilha</p> 
+                        <p id="p2">Quilha dupla</p>
+                    </div>
+
+                </div>
+
+
+                <div class="cards">
+                    <h3>Acomodações</h3>
+                    
+                    <div class="textos">
+                        <p> Número máximo autorizado de pessoas</p> 
+                        <p id="p2">12 pessoas</p>
+                    </div>
+                    
+                    <div class="textos">
+                        <p>Número de camarotes</p> 
+                        <p id="p2">3 cabines</p>
+                    </div>
+                    
+
+                    <div class="textos">
+                        <p>Número de beliches</p> 
+                        <p id="p2">6 beliches</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>casas-de-banho</p> 
+                        <p id="p2">3</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>chuveiros</p> 
+                        <p id="p2">3</p>
+                    </div>
+
+                </div>
+
+
+                <div class="cards">
+                    <h3>Desempenho</h3>
+                    
+                    <div class="textos">
+                        <p>Motor</p> 
+                        <p id="p2">Yanmar 4JH57</p>
+                    </div>
+                    
+                    <div class="textos">
+                        <p>Potência do motor</p> 
+                        <p id="p2">2 x 57 P.S. / 42 kW</p>
+                    </div>
+                    
+                    <div class="textos">
+                        <p>Período de funcionamento do motor</p> 
+                        <p id="p2">165h</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>Combustível</p> 
+                        <p id="p2">Diesel</p>
+                    </div>
+
+                    <div class="textos">
+                        <p>Depósito de combustível</p> 
+                        <p id="p2">1.040l</p>
+                    </div>              
+                    
+                    <div class="textos">
+                        <p>Tanque de água fresca</p> 
+                        <p id="p2">600 l</p>
+                    </div>      
+
+                                        
+                    <div class="textos">
+                        <p>Tanque de água Residual</p> 
+                        <p id="p2">240 l</p>
+                    </div>   
+
+                </div>
+
+
+            </div>  
+
+            <div class="grid">
+                
+                <div id="btnalugar" class="btnalugar">
+                    <p>Alugar</p>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+        
+    <script src="../../js/script.js"></script>
+    <script src="../../js/scriptsCarrinho.js"></script>
+    <script src="../../js/ScriptLogin.js"></script>
+</body>
+</html>
